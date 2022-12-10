@@ -63,7 +63,7 @@ def add_sizes_folders_above(folder_to_add, size_to_add):
         folder_above = folder_to_add[0:folder_to_add.rfind("/") ]
         if folder_above == "":
             folder_above = "/"
-        add_sizes_folders_above(folder_above, size_to_add) #filesystem_dict[folder_to_add] - this was a bug... i was just making up used space
+        add_sizes_folders_above(folder_above, size_to_add) #filesystem_dict[folder_to_add] - this was a bug... i was just making up used spacegit g
 
     return
 
