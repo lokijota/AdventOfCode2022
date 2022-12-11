@@ -18,8 +18,6 @@ next_cycle_to_capture = 20
 signal_strength = 0
 
 while clock_is_ticking:
-    
-    
 
     # run instructions
     if clock_tick == next_cycle_to_capture:
@@ -51,7 +49,7 @@ while clock_is_ticking:
         is_command_executing = True
 
     
-    # sprite location
+    # sprite location - part 2
     start_sprite = X-1
     end_sprite = X+1
 
@@ -59,7 +57,6 @@ while clock_is_ticking:
         crt[clock_tick] = "#"
     else:
         crt[clock_tick] = " "
-    
 
     clock_tick += 1
 
