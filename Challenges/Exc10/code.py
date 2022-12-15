@@ -22,7 +22,7 @@ while clock_is_ticking:
         next_cycle_to_capture += 40
 
         if next_cycle_to_capture > 220:
-            next_cycle_to_capture = 9999999999999
+            next_cyclee_to_capture = 9999999999999
 
     if remaining_ticks > 0:
         remaining_ticks -= 1
