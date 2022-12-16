@@ -7,7 +7,7 @@ with open('Challenges\Exc14\input.txt') as f:
 
 # split in xy pairs, then trim, then split the xy pairs in x and y, and then convert to int 
 rock_paths = []
-rock_paths.append([[list(map(int, y.strip().split(","))) for y in x.split("->")] for x in lines])
+rockpaths.append([[list(map(int, y.strip().split(","))) for y in x.split("->")] for x in lines])
 rock_paths = rock_paths[0]
 # print(rock_paths)
 
