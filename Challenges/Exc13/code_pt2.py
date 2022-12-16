@@ -2,7 +2,7 @@ import numpy as np
 import functools
 
 # ler todas as linhas, como de costume
-with open('Challenges\Exc13\input.txt') as f:
+with open('Challenges\Exc13\input_debug.txt') as f:
     lines = f.read().splitlines()
 
 # converter tudo para uma lista
