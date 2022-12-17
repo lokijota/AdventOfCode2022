@@ -3,6 +3,7 @@ import numpy as np
 from operator import itemgetter
 import anytree
 import sys
+import itertools
 
 ################### implementação de grafo de: https://www.udacity.com/blog/2021/10/implementing-dijkstras-algorithm-in-python.html
  
@@ -114,19 +115,29 @@ def get_path(prev_nodes, start_node, target_node):
 ##################### Tree representation for A*-like algorithm
 
 class TreeNode(anytree.NodeMixin):
-    def __init__(self, valve, elapsed_ticks, roi, unvisited_valves, parent=None, children=None):
-        self.valve = valve
-        self.elapsed_ticks = elapsed_ticks
-        self.roi = roi
+
+    # NOTE: TIRAR DO CONSTRUCTOR E METER MÉTODO SEPARADO PARA P1 E P2?
+
+    def __init__(self, valve1, roi1, elapsed1, valve2, roi2, elapsed2, unvisited_valves, parent=None, children=None):
+        self.e1_valve = valve1
+        self.e1_roi = roi1
+        self.e1_elapsed_ticks = elapsed1
+
+        self.e2_valve = valve2
+        self.e2_roi = roi2
+        self.e2_elapsed_ticks = elapsed2
+
+        # o roi pode ser só um campo mas é mais fácil assim fazer a comparação... NOTAJOTA
         self.unvisited_valves = unvisited_valves
+        
         self.parent = parent
         if children:  # set children only if given
             self.children = children
 
 def print_tree(top_node):
     for pre, fill, node in anytree.RenderTree(top_node):
-        treestr = u"%s%s" % (pre, node.valve)
-        print(treestr.ljust(8), node.roi, node.elapsed_ticks)
+        treestr = u"%s%s" % (pre, node.e1_valve + "|" + node.e2_valve)
+        print(treestr.ljust(8), node.e1_roi, node.e1_elapsed_ticks, "|", node.e2_roi, node.e2_elapsed_ticks)
 
 # ler todas as linhas, como de costume
 with open('Challenges\Exc16\input.txt') as f:
@@ -161,40 +172,54 @@ def calculate_roi(start_node, end_node, time_remaining, previous_nodes):
             
 ### AQUI É QUE ISTO SE TORNA SÉRIO
 
-# função para gerar a árvore
-def generate_children(tree_node): # eg se AA
+def generate_children_v2(tree_node):
 
-    # calculate best paths to all the unvisited valves
-    previous_nodes, shortest_path = dijkstra_algorithm(graph=graph, start_node=tree_node.valve)
-    valves_visit_roi = { valve_name:calculate_roi(tree_node.valve, valve_name, 30-tree_node.elapsed_ticks, previous_nodes) for valve_name in tree_node.unvisited_valves}
-    # print(valves_visit_roi)
+    # gerar todas as combinações possíveis de válvulas para os dois elefantes a partir das posições actuais
+    combinations = list(itertools.combinations(tree_node.unvisited_valves, 2))
+    combinations += [(combination[1], combination[0]) for combination in list(combinations)]
+    # combinations = [('BB', 'CC'), ('BB', 'DD'), ...
 
-    # create a new node for each unvisited valve/roi
-    for roikey in valves_visit_roi.keys():
-        remaining_valves = tree_node.unvisited_valves.copy()
-        remaining_valves.remove(roikey)
-        if valves_visit_roi[roikey][0] > 0: #else skip, no point in adding paths with negative return
-            new_node = TreeNode(roikey, tree_node.elapsed_ticks + valves_visit_roi[roikey][1], tree_node.roi + valves_visit_roi[roikey][0], remaining_valves, parent=tree_node)
+    # agora, como antes, calcular o ROI de cada combinação, para podermos criar o nó da árvore
+    # começamos com o e1
+    previous_nodes, shortest_path = dijkstra_algorithm(graph=graph, start_node=tree_node.e1_valve)
+    rois_unvisited_valve_e1 = { valve_name:calculate_roi(tree_node.e1_valve, valve_name, 26-tree_node.e1_elapsed_ticks, previous_nodes) for valve_name in tree_node.unvisited_valves}
 
-    # now generate the next level of the tree
-    # print_tree(tree)
+    # small optimization, but I should be keeping all of these in a cache NOTAJOTA
+    if tree_node.e1_valve != tree_node.e2_valve: 
+        previous_nodes, shortest_path = dijkstra_algorithm(graph=graph, start_node=tree_node.e2_valve)
+        rois_unvisited_valve_e2 = { valve_name:calculate_roi(tree_node.e2_valve, valve_name, 26-tree_node.e2_elapsed_ticks, previous_nodes) for valve_name in tree_node.unvisited_valves}
+    else: # se é o mesmo...
+        rois_unvisited_valve_e2 = rois_unvisited_valve_e1
+
+    # criar um nó novo para cada par de válvulas visitados pelos elefantes, recorrendo às combinações geradas acima
+    for combination in combinations:
+        # calcular o ROI de cada combinação
+        roi_e1 = tree_node.e1_roi + rois_unvisited_valve_e1[combination[0]][0]
+        roi_e2 = tree_node.e2_roi +rois_unvisited_valve_e2[combination[1]][0]
+        if roi_e1 > 0 and roi_e2 > 0: # else skip, no point in adding paths with negative return
+            # calcular o tempo de viagem de cada elefante
+            e1_elapsed_ticks = tree_node.e1_elapsed_ticks + rois_unvisited_valve_e1[combination[0]][1]
+            e2_elapsed_ticks = tree_node.e2_elapsed_ticks + rois_unvisited_valve_e2[combination[1]][1]
+            
+            # remover os nós que vamos visitar da lista de nós não visitados
+            remaining_valves = tree_node.unvisited_valves.copy()
+            remaining_valves.remove(combination[0])
+            remaining_valves.remove(combination[1])
+            
+            # criar o nó
+            new_node = TreeNode(combination[0], roi_e1, e1_elapsed_ticks, combination[1], roi_e2, e2_elapsed_ticks, remaining_valves, parent=tree_node)
 
     for child in tree_node.children:
-        generate_children(child)
+            generate_children_v2(child)
 
     return
 
+
 # generate all he possible paths starting from AA and add them to the tree
 valves_worth_visiting = [node for node in graph.get_nodes() if flow_rates[node] > 0]
-# previous_nodes = {} # global variable / don't delete
-# shortest_path = {} # global variable / don't delete
-# # previous_nodes, shortest_path = dijkstra_algorithm(graph=graph, start_node="AA")
 
-# valves_visit_roi = {valve_name:calculate_roi("AA", valve_name, 30) for valve_name in valves_worth_visiting}
-# print(valves_visit_roi) #{'BB': 363, 'CC': 52, 'DD': 559, 'EE': 79, 'HH': 523, 'JJ': 565}
-
-tree = TreeNode('AA', 0, 0, valves_worth_visiting)
-generate_children(tree)
+tree = TreeNode('AA', 0, 0, 'AA', 0, 0, valves_worth_visiting)
+generate_children_v2(tree)
 
 # possible prunning:
 # {'BB': [363, 2], 'CC': [52, 3], 'DD': [559, 2], 'EE': [79, 3], 'HH': [523, 6], 'JJ': [565, 3]} 
@@ -204,16 +229,16 @@ generate_children(tree)
 # print_tree(tree)
 
 
-print(max([node.roi for node in anytree.PreOrderIter(tree)]))
+print(max([node.e1_roi+node.e2_roi for node in anytree.PreOrderIter(tree)]))
 
-max = 1600
+max = 1000
 w = anytree.Walker()
 
 for node in anytree.PreOrderIter(tree):
     
-    if node.roi > max:
+    if node.e1_roi + node.e2_roi > max:
         print("**")
-        max = node.roi
+        max = node.e1_roi + node.e2_roi
 
         the_walk = w.walk(node, tree)
         path = list(the_walk[0])
@@ -221,7 +246,4 @@ for node in anytree.PreOrderIter(tree):
         path.reverse()
         
         for walknode in path:
-            print(walknode.valve, "(", walknode.roi, walknode.elapsed_ticks, ")", end=" / ")
-
-
-# resposta 2124
+            print(walknode.e1_valve, "(", walknode.e1_roi, walknode.e1_elapsed_ticks, ")", walknode.e2_valve, "(", walknode.e2_roi, walknode.e2_elapsed_ticks, ")",end=" / ")
