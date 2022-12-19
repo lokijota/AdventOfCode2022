@@ -224,8 +224,8 @@ def generate_children_v2(tree_node, level=1):
     # prune longer distances
     if level <= 2:
         # combinations = [x for d, x in zip([distances[c[1] + c[0]] for c in combinations], combinations) if d <= 10]
-        # combinations = [x for d, x in sorted(zip([distances[c[1] + c[0]] for c in combinations], combinations)) if d <= 10]
-        combinations = [x for d, x in sorted(zip([distances[c[1] + c[0]] for c in combinations], combinations))]
+        combinations = [x for d, x in sorted(zip([distances[c[1] + c[0]] for c in combinations], combinations)) if d <= 10]
+        # combinations = [x for d, x in sorted(zip([distances[c[1] + c[0]] for c in combinations], combinations))]
         # print("At level ", level, " combinations: ", combinations)
 
     # agora, como antes, calcular o ROI de cada combinação, para podermos criar o nó da árvore
@@ -273,7 +273,7 @@ def generate_children_v2(tree_node, level=1):
             new_node_roi = roi_e1 + roi_e2
             new_node = None
 
-            if ((level == 1 and (new_node_roi > 450)) or level > 1 ): #or \
+            if ((level == 1 and (new_node_roi > 690)) or level > 1 ): #or \
             #     (level == 2 and new_node_roi > 500) or \
             #     (level == 3 and new_node_roi > 1600):
 

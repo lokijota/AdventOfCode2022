@@ -1,0 +1,1021 @@
+
+New max ROI:597 found on level 1
+ [ AA|AA: 0 0|0 0
+
+
+New max ROI:748 found on level 1
+ [ RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:765 found on level 1
+ [ TE|YP: 408 9|357 9
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:839 found on level 1
+ [ DW|SU: 399 5|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:880 found on level 1
+ [ HH|SU: 440 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1288 found on level 2
+ [ FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1302 found on level 2
+ [ TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1447 found on level 2
+ [ TE|YP: 692 10|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1448 found on level 2
+ [ HH|TE: 648 9|800 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1452 found on level 2
+ [ TE|HH: 692 10|760 10
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1538 found on level 3
+ [ XD|HH: 643 15|895 19
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1686 found on level 3
+ [ XD|TE: 643 15|1043 14
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1696 found on level 3
+ [ HH|TE: 653 20|1043 14
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1762 found on level 4
+ [ TE|FL: 835 18|927 22
+<- XD|HH: 643 15|895 19
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1768 found on level 4
+ [ TE|DW: 835 18|933 24
+<- XD|HH: 643 15|895 19
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1781 found on level 4
+ [ TE|XC: 835 18|946 23
+<- XD|HH: 643 15|895 19
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1862 found on level 4
+ [ HH|DW: 743 21|1119 22
+<- XD|TE: 643 15|1043 14
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1876 found on level 5
+ [ CS|FL: 749 24|1127 25
+<- HH|DW: 743 21|1119 22
+<- XD|TE: 643 15|1043 14
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1887 found on level 5
+ [ XC|FL: 760 25|1127 25
+<- HH|DW: 743 21|1119 22
+<- XD|TE: 643 15|1043 14
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1969 found on level 4
+ [ YP|DW: 1025 18|944 20
+<- FQ|HH: 857 15|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1974 found on level 4
+ [ YP|XC: 1025 18|949 19
+<- FQ|HH: 857 15|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1993 found on level 5
+ [ CS|FL: 1025 26|968 23
+<- YP|DW: 1025 18|944 20
+<- FQ|HH: 857 15|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1995 found on level 5
+ [ DW|UK: 1025 26|970 23
+<- YP|XC: 1025 18|949 19
+<- FQ|HH: 857 15|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2014 found on level 5
+ [ CS|DW: 1025 26|989 21
+<- YP|FL: 1025 18|894 18
+<- FQ|HH: 857 15|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2028 found on level 6
+ [ CS|UK: 1025 26|1003 24
+<- CS|DW: 1025 26|989 21
+<- YP|FL: 1025 18|894 18
+<- FQ|HH: 857 15|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2059 found on level 4
+ [ FQ|DW: 1115 16|944 20
+<- YP|HH: 965 13|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2064 found on level 4
+ [ FQ|XC: 1115 16|949 19
+<- YP|HH: 965 13|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2086 found on level 5
+ [ CS|FL: 1118 25|968 23
+<- FQ|DW: 1115 16|944 20
+<- YP|HH: 965 13|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2092 found on level 5
+ [ DW|CS: 1134 25|958 23
+<- FQ|XC: 1115 16|949 19
+<- YP|HH: 965 13|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2099 found on level 5
+ [ DW|FL: 1134 25|965 24
+<- FQ|XC: 1115 16|949 19
+<- YP|HH: 965 13|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2104 found on level 5
+ [ DW|UK: 1134 25|970 23
+<- FQ|XC: 1115 16|949 19
+<- YP|HH: 965 13|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2107 found on level 5
+ [ CS|DW: 1118 25|989 21
+<- FQ|FL: 1115 16|894 18
+<- YP|HH: 965 13|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2121 found on level 6
+ [ CS|UK: 1118 25|1003 24
+<- CS|DW: 1118 25|989 21
+<- FQ|FL: 1115 16|894 18
+<- YP|HH: 965 13|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2122 found on level 6
+ [ UK|CS: 935 23|1187 26
+<- DW|CS: 914 20|1187 26
+<- FL|FQ: 800 17|1187 17
+<- HH|YP: 728 14|1052 14
+<- XD|TE: 488 8|800 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2129 found on level 6
+ [ XC|CS: 942 24|1187 26
+<- HH|CS: 908 20|1187 26
+<- FL|FQ: 788 17|1187 17
+<- DW|YP: 716 14|1052 14
+<- XD|TE: 488 8|800 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2221 found on level 5
+ [ XC|FQ: 924 22|1297 18
+<- CS|YP: 856 18|1177 15
+<- HH|TE: 832 15|946 12
+<- DW|XD: 612 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2257 found on level 5
+ [ CS|FQ: 960 23|1297 18
+<- XC|YP: 951 19|1177 15
+<- HH|TE: 832 15|946 12
+<- DW|XD: 612 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2264 found on level 5
+ [ FL|FQ: 967 24|1297 18
+<- XC|YP: 951 19|1177 15
+<- HH|TE: 832 15|946 12
+<- DW|XD: 612 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2269 found on level 5
+ [ UK|FQ: 972 23|1297 18
+<- XC|YP: 951 19|1177 15
+<- HH|TE: 832 15|946 12
+<- DW|XD: 612 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2276 found on level 5
+ [ XC|FQ: 1018 20|1258 20
+<- HH|TE: 916 16|1168 15
+<- FL|YP: 716 13|904 12
+<- DW|XD: 612 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2282 found on level 6
+ [ CS|FQ: 1024 24|1258 20
+<- XC|FQ: 1018 20|1258 20
+<- HH|TE: 916 16|1168 15
+<- FL|YP: 716 13|904 12
+<- DW|XD: 612 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2284 found on level 6
+ [ OL|FQ: 1026 24|1258 20
+<- XC|FQ: 1018 20|1258 20
+<- HH|TE: 916 16|1168 15
+<- FL|YP: 716 13|904 12
+<- DW|XD: 612 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2290 found on level 6
+ [ UK|FQ: 1032 24|1258 20
+<- XC|FQ: 1018 20|1258 20
+<- HH|TE: 916 16|1168 15
+<- FL|YP: 716 13|904 12
+<- DW|XD: 612 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2315 found on level 5
+ [ XC|FQ: 1018 20|1297 18
+<- HH|YP: 916 16|1177 15
+<- FL|TE: 716 13|946 12
+<- DW|XD: 612 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2321 found on level 6
+ [ CS|FQ: 1024 24|1297 18
+<- XC|FQ: 1018 20|1297 18
+<- HH|YP: 916 16|1177 15
+<- FL|TE: 716 13|946 12
+<- DW|XD: 612 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2323 found on level 6
+ [ OL|FQ: 1026 24|1297 18
+<- XC|FQ: 1018 20|1297 18
+<- HH|YP: 916 16|1177 15
+<- FL|TE: 716 13|946 12
+<- DW|XD: 612 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2329 found on level 6
+ [ UK|FQ: 1032 24|1297 18
+<- XC|FQ: 1018 20|1297 18
+<- HH|YP: 916 16|1177 15
+<- FL|TE: 716 13|946 12
+<- DW|XD: 612 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2331 found on level 5
+ [ FL|FQ: 1034 22|1297 18
+<- DW|YP: 1002 19|1177 15
+<- XC|TE: 869 13|946 12
+<- HH|XD: 648 9|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2339 found on level 6
+ [ UK|FQ: 1042 24|1297 18
+<- DW|FQ: 1028 21|1297 18
+<- FL|YP: 933 18|1177 15
+<- XC|TE: 869 13|946 12
+<- HH|XD: 648 9|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2343 found on level 5
+ [ DW|FQ: 1046 20|1297 18
+<- UK|YP: 932 17|1177 15
+<- XC|TE: 869 13|946 12
+<- HH|XD: 648 9|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2367 found on level 6
+ [ FL|FQ: 1070 23|1297 18
+<- DW|FQ: 1046 20|1297 18
+<- UK|YP: 932 17|1177 15
+<- XC|TE: 869 13|946 12
+<- HH|XD: 648 9|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2390 found on level 6
+ [ XC|FQ: 1093 22|1297 18
+<- UK|FQ: 1025 18|1297 18
+<- DW|YP: 969 15|1177 15
+<- FL|TE: 760 12|946 12
+<- HH|XD: 648 9|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2393 found on level 6
+ [ CS|OL: 1235 26|1158 24
+<- FQ|XC: 1235 17|1150 20
+<- YP|HH: 1100 14|1048 16
+<- TE|FL: 848 11|848 13
+<- XD|DW: 488 8|744 10
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2399 found on level 6
+ [ CS|UK: 1235 26|1164 24
+<- FQ|XC: 1235 17|1150 20
+<- YP|HH: 1100 14|1048 16
+<- TE|FL: 848 11|848 13
+<- XD|DW: 488 8|744 10
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:597 found on level 1
+ [ AA|AA: 0 0|0 0
+
+
+New max ROI:748 found on level 1
+ [ RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:765 found on level 1
+ [ TE|YP: 408 9|357 9
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:839 found on level 1
+ [ DW|SU: 399 5|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:880 found on level 1
+ [ HH|SU: 440 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1288 found on level 2
+ [ FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1302 found on level 2
+ [ TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1447 found on level 2
+ [ TE|YP: 692 10|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1448 found on level 2
+ [ HH|TE: 648 9|800 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1452 found on level 2
+ [ TE|HH: 692 10|760 10
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1538 found on level 3
+ [ XD|HH: 643 15|895 19
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1686 found on level 3
+ [ XD|TE: 643 15|1043 14
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1696 found on level 3
+ [ HH|TE: 653 20|1043 14
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1762 found on level 4
+ [ TE|FL: 835 18|927 22
+<- XD|HH: 643 15|895 19
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1768 found on level 4
+ [ TE|DW: 835 18|933 24
+<- XD|HH: 643 15|895 19
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1781 found on level 4
+ [ TE|XC: 835 18|946 23
+<- XD|HH: 643 15|895 19
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1862 found on level 4
+ [ HH|DW: 743 21|1119 22
+<- XD|TE: 643 15|1043 14
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1876 found on level 5
+ [ CS|FL: 749 24|1127 25
+<- HH|DW: 743 21|1119 22
+<- XD|TE: 643 15|1043 14
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1887 found on level 5
+ [ XC|FL: 760 25|1127 25
+<- HH|DW: 743 21|1119 22
+<- XD|TE: 643 15|1043 14
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1969 found on level 4
+ [ YP|DW: 1025 18|944 20
+<- FQ|HH: 857 15|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1974 found on level 4
+ [ YP|XC: 1025 18|949 19
+<- FQ|HH: 857 15|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1993 found on level 5
+ [ CS|FL: 1025 26|968 23
+<- YP|DW: 1025 18|944 20
+<- FQ|HH: 857 15|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1995 found on level 5
+ [ DW|UK: 1025 26|970 23
+<- YP|XC: 1025 18|949 19
+<- FQ|HH: 857 15|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2014 found on level 5
+ [ CS|DW: 1025 26|989 21
+<- YP|FL: 1025 18|894 18
+<- FQ|HH: 857 15|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2028 found on level 6
+ [ CS|UK: 1025 26|1003 24
+<- CS|DW: 1025 26|989 21
+<- YP|FL: 1025 18|894 18
+<- FQ|HH: 857 15|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2059 found on level 4
+ [ FQ|DW: 1115 16|944 20
+<- YP|HH: 965 13|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2064 found on level 4
+ [ FQ|XC: 1115 16|949 19
+<- YP|HH: 965 13|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2086 found on level 5
+ [ CS|FL: 1118 25|968 23
+<- FQ|DW: 1115 16|944 20
+<- YP|HH: 965 13|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2092 found on level 5
+ [ DW|CS: 1134 25|958 23
+<- FQ|XC: 1115 16|949 19
+<- YP|HH: 965 13|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2099 found on level 5
+ [ DW|FL: 1134 25|965 24
+<- FQ|XC: 1115 16|949 19
+<- YP|HH: 965 13|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2104 found on level 5
+ [ DW|UK: 1134 25|970 23
+<- FQ|XC: 1115 16|949 19
+<- YP|HH: 965 13|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2107 found on level 5
+ [ CS|DW: 1118 25|989 21
+<- FQ|FL: 1115 16|894 18
+<- YP|HH: 965 13|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2121 found on level 6
+ [ CS|UK: 1118 25|1003 24
+<- CS|DW: 1118 25|989 21
+<- FQ|FL: 1115 16|894 18
+<- YP|HH: 965 13|830 15
+<- TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2122 found on level 6
+ [ UK|CS: 935 23|1187 26
+<- DW|CS: 914 20|1187 26
+<- FL|FQ: 800 17|1187 17
+<- HH|YP: 728 14|1052 14
+<- XD|TE: 488 8|800 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2129 found on level 6
+ [ XC|CS: 942 24|1187 26
+<- HH|CS: 908 20|1187 26
+<- FL|FQ: 788 17|1187 17
+<- DW|YP: 716 14|1052 14
+<- XD|TE: 488 8|800 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2221 found on level 5
+ [ XC|FQ: 924 22|1297 18
+<- CS|YP: 856 18|1177 15
+<- HH|TE: 832 15|946 12
+<- DW|XD: 612 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2257 found on level 5
+ [ CS|FQ: 960 23|1297 18
+<- XC|YP: 951 19|1177 15
+<- HH|TE: 832 15|946 12
+<- DW|XD: 612 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2264 found on level 5
+ [ FL|FQ: 967 24|1297 18
+<- XC|YP: 951 19|1177 15
+<- HH|TE: 832 15|946 12
+<- DW|XD: 612 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2269 found on level 5
+ [ UK|FQ: 972 23|1297 18
+<- XC|YP: 951 19|1177 15
+<- HH|TE: 832 15|946 12
+<- DW|XD: 612 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2276 found on level 5
+ [ XC|FQ: 1018 20|1258 20
+<- HH|TE: 916 16|1168 15
+<- FL|YP: 716 13|904 12
+<- DW|XD: 612 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2282 found on level 6
+ [ CS|FQ: 1024 24|1258 20
+<- XC|FQ: 1018 20|1258 20
+<- HH|TE: 916 16|1168 15
+<- FL|YP: 716 13|904 12
+<- DW|XD: 612 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2284 found on level 6
+ [ OL|FQ: 1026 24|1258 20
+<- XC|FQ: 1018 20|1258 20
+<- HH|TE: 916 16|1168 15
+<- FL|YP: 716 13|904 12
+<- DW|XD: 612 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2290 found on level 6
+ [ UK|FQ: 1032 24|1258 20
+<- XC|FQ: 1018 20|1258 20
+<- HH|TE: 916 16|1168 15
+<- FL|YP: 716 13|904 12
+<- DW|XD: 612 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2315 found on level 5
+ [ XC|FQ: 1018 20|1297 18
+<- HH|YP: 916 16|1177 15
+<- FL|TE: 716 13|946 12
+<- DW|XD: 612 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2321 found on level 6
+ [ CS|FQ: 1024 24|1297 18
+<- XC|FQ: 1018 20|1297 18
+<- HH|YP: 916 16|1177 15
+<- FL|TE: 716 13|946 12
+<- DW|XD: 612 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2323 found on level 6
+ [ OL|FQ: 1026 24|1297 18
+<- XC|FQ: 1018 20|1297 18
+<- HH|YP: 916 16|1177 15
+<- FL|TE: 716 13|946 12
+<- DW|XD: 612 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2329 found on level 6
+ [ UK|FQ: 1032 24|1297 18
+<- XC|FQ: 1018 20|1297 18
+<- HH|YP: 916 16|1177 15
+<- FL|TE: 716 13|946 12
+<- DW|XD: 612 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2331 found on level 5
+ [ FL|FQ: 1034 22|1297 18
+<- DW|YP: 1002 19|1177 15
+<- XC|TE: 869 13|946 12
+<- HH|XD: 648 9|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2339 found on level 6
+ [ UK|FQ: 1042 24|1297 18
+<- DW|FQ: 1028 21|1297 18
+<- FL|YP: 933 18|1177 15
+<- XC|TE: 869 13|946 12
+<- HH|XD: 648 9|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2343 found on level 5
+ [ DW|FQ: 1046 20|1297 18
+<- UK|YP: 932 17|1177 15
+<- XC|TE: 869 13|946 12
+<- HH|XD: 648 9|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2367 found on level 6
+ [ FL|FQ: 1070 23|1297 18
+<- DW|FQ: 1046 20|1297 18
+<- UK|YP: 932 17|1177 15
+<- XC|TE: 869 13|946 12
+<- HH|XD: 648 9|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2390 found on level 6
+ [ XC|FQ: 1093 22|1297 18
+<- UK|FQ: 1025 18|1297 18
+<- DW|YP: 969 15|1177 15
+<- FL|TE: 760 12|946 12
+<- HH|XD: 648 9|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2393 found on level 6
+ [ CS|OL: 1235 26|1158 24
+<- FQ|XC: 1235 17|1150 20
+<- YP|HH: 1100 14|1048 16
+<- TE|FL: 848 11|848 13
+<- XD|DW: 488 8|744 10
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2399 found on level 6
+ [ CS|UK: 1235 26|1164 24
+<- FQ|XC: 1235 17|1150 20
+<- YP|HH: 1100 14|1048 16
+<- TE|FL: 848 11|848 13
+<- XD|DW: 488 8|744 10
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2413 found on level 5
+ [ RP|FQ: 1116 21|1297 18
+<- FL|YP: 1046 17|1177 15
+<- DW|TE: 974 14|946 12
+<- XC|XD: 746 8|610 9
+<- HH|SU: 440 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2419 found on level 6
+ [ CS|FQ: 1122 24|1297 18
+<- RP|FQ: 1116 21|1297 18
+<- FL|YP: 1046 17|1177 15
+<- DW|TE: 974 14|946 12
+<- XC|XD: 746 8|610 9
+<- HH|SU: 440 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2420 found on level 5
+ [ RP|FQ: 1123 21|1297 18
+<- DW|YP: 1053 15|1177 15
+<- UK|TE: 844 12|946 12
+<- XC|XD: 746 8|610 9
+<- HH|SU: 440 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2426 found on level 6
+ [ CS|FQ: 1129 24|1297 18
+<- RP|FQ: 1123 21|1297 18
+<- DW|YP: 1053 15|1177 15
+<- UK|TE: 844 12|946 12
+<- XC|XD: 746 8|610 9
+<- HH|SU: 440 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2428 found on level 6
+ [ FL|FQ: 1131 25|1297 18
+<- RP|FQ: 1123 21|1297 18
+<- DW|YP: 1053 15|1177 15
+<- UK|TE: 844 12|946 12
+<- XC|XD: 746 8|610 9
+<- HH|SU: 440 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2440 found on level 6
+ [ CS|RP: 1129 22|1311 25
+<- FL|FQ: 1117 18|1297 18
+<- DW|YP: 1053 15|1177 15
+<- UK|TE: 844 12|946 12
+<- XC|XD: 746 8|610 9
+<- HH|SU: 440 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2470 found on level 6
+ [ RP|FQ: 1173 22|1297 18
+<- FL|FQ: 1117 18|1297 18
+<- DW|YP: 1053 15|1177 15
+<- UK|TE: 844 12|946 12
+<- XC|XD: 746 8|610 9
+<- HH|SU: 440 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2473 found on level 7
+ [ CS|FQ: 1176 25|1297 18
+<- RP|FQ: 1173 22|1297 18
+<- FL|FQ: 1117 18|1297 18
+<- DW|YP: 1053 15|1177 15
+<- UK|TE: 844 12|946 12
+<- XC|XD: 746 8|610 9
+<- HH|SU: 440 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2476 found on level 6
+ [ FQ|UK: 1553 20|923 23
+<- YP|UK: 1463 17|923 23
+<- TE|FL: 1274 14|902 18
+<- XD|DW: 986 11|838 15
+<- SU|RP: 836 8|629 9
+<- HH|XC: 440 4|391 3
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2525 found on level 6
+ [ FQ|CS: 1553 20|972 26
+<- YP|UK: 1463 17|972 19
+<- TE|DW: 1274 14|923 16
+<- XD|FL: 986 11|733 13
+<- SU|RP: 836 8|629 9
+<- HH|XC: 440 4|391 3
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2537 found on level 6
+ [ FQ|OL: 1553 20|984 23
+<- YP|UK: 1463 17|972 19
+<- TE|DW: 1274 14|923 16
+<- XD|FL: 986 11|733 13
+<- SU|RP: 836 8|629 9
+<- HH|XC: 440 4|391 3
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:2540 found on level 6
+ [ FQ|OL: 1553 20|987 26
+<- YP|CS: 1463 17|987 19
+<- TE|RP: 1274 14|966 16
+<- XD|FL: 986 11|826 12
+<- SU|DW: 836 8|714 9
+<- HH|XC: 440 4|391 3
+<- AA|AA: 0 0|0 0
+
