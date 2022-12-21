@@ -27,13 +27,13 @@ class Generator:
 gas_generator = Generator(lines[0])
 piece_generator = Generator("-+LIo")
 
-# initialize shapes - each tuple is: width, height, sprite as a string
+# initialize shapes - each tuple is: width, height, sprite as relative coordinates from the top-left corner
 piece_characteristics = {}
-piece_characteristics["-"] = (4, 1, "1111")
-piece_characteristics["+"] = (3, 3, "010111010")
-piece_characteristics["L"] = (3, 3, "001001111")
-piece_characteristics["I"] = (1, 4, "1111")
-piece_characteristics["o"] = (2, 2, "1111")
+piece_characteristics["-"] = (4, 1, [(0,0), (0,1), (0,2), (0,3)])
+piece_characteristics["+"] = (3, 3, [(0,1), (1,0), (1,1), (1,2), (2,1)])
+piece_characteristics["L"] = (3, 3, [(0,2), (1,2), (2,0), (2,1), (2,2)])
+piece_characteristics["I"] = (1, 4, [(0,0), (1,0), (2,0), (3,0)])
+piece_characteristics["o"] = (2, 2, [(0,0), (0,1), (1,0), (1,1)])
 
 print(piece_characteristics)
 
@@ -44,13 +44,12 @@ class Board:
     
     def play_move(self, piece):
 
-        # prepare for the new move - make 3 rows of space
-        self.board.insert(0, "0000000")
-        self.board.insert(0, "0000000")
-        self.board.insert(0, "0000000")
+        # prepare for the new move - make 3 rows of space + height of the piece
+        for i in range(3 + piece_characteristics[piece][1]):
+            self.board.insert(0, "0000000")
 
         # calculate starting pos of piece
-        piece_row = self.height() + piece_characteristics[piece][1]
+        piece_row = self.height()
         piece_col = 2
 
         moved = True
@@ -61,25 +60,69 @@ class Board:
 
             moved = moved_side or moved_down
 
+        # JOTA: DO SOMETHING -- PUT THE PIECE IN PLACE ON THE BOARD
+
+        while self.board[0] == "0000000":
+            self.board.pop(0)
+
         return piece
     
     def MoveSideways(self, direction, piece, row, col):
-        return 0, 0, False
-    
+        if direction == "<": # left
+            if col-1 < 0:
+                return row, col, False
+
+            if self.overlap(piece, row, col-1):
+                return row, col, False
+
+            return row, col-1, True
+
+        else: # right
+            if col + 1 + piece_characteristics[piece][0] > 6:
+                return row, col, False
+
+            if self.overlap(piece, row, col+1):
+                return row, col, False
+
+            return row, col+1, True
+
     def MoveDown(self, piece, row, col):
-        return 0, 0, False 
+
+        # if the piece is already at the bottom, it can't move down
+        if row - piece_characteristics[piece][1] < 0:
+            return row, col, False
+
+        if self.overlap(piece, row-1, col):
+            return row, col, False
+
+        return row-1, col, True 
     
     def height(self):
         # this has to be smarter - there may be empty rows at the top after the movement / unless I delete them
         return len(self.board)-1
 
     def overlap(self, piece, row, col):
-        # TBD
+        # check if the piece overlaps with existing pieces on the board
+        
+        # calculate new piece coordinates
+        where_piece_will_be = [ (c[0] + row, c[1] + col) for c in piece_characteristics[piece][2]]
+        
+        # now check what's on the board in this position 
+        for c in where_piece_will_be:
+            if self.board[c[0]][c[1]] != "0":
+                return True
+
         return False
+
+    def print_board(self):
+        for i in range(len(self.board)):
+            print(self.board[i])
+
 
 b = Board(gas_generator)
 
 for i in range(2022):
     b.play_move(piece_generator.next())
+    b.print_board()
 
 print(b.height())
