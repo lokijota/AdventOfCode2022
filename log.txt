@@ -1019,3 +1019,128 @@ New max ROI:2540 found on level 6
 <- HH|XC: 440 4|391 3
 <- AA|AA: 0 0|0 0
 
+
+New max ROI:597 found on level 1
+ [ AA|AA: 0 0|0 0
+
+
+New max ROI:748 found on level 1
+ [ RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:765 found on level 1
+ [ TE|YP: 408 9|357 9
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:839 found on level 1
+ [ DW|SU: 399 5|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:880 found on level 1
+ [ HH|SU: 440 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1288 found on level 2
+ [ FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1302 found on level 2
+ [ TE|XD: 692 10|610 9
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1447 found on level 2
+ [ TE|YP: 692 10|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1448 found on level 2
+ [ HH|TE: 648 9|800 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1452 found on level 2
+ [ TE|HH: 692 10|760 10
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1538 found on level 3
+ [ XD|HH: 643 15|895 19
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1686 found on level 3
+ [ XD|TE: 643 15|1043 14
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1696 found on level 3
+ [ HH|TE: 653 20|1043 14
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1762 found on level 4
+ [ TE|FL: 835 18|927 22
+<- XD|HH: 643 15|895 19
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1768 found on level 4
+ [ TE|DW: 835 18|933 24
+<- XD|HH: 643 15|895 19
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1781 found on level 4
+ [ TE|XC: 835 18|946 23
+<- XD|HH: 643 15|895 19
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1862 found on level 4
+ [ HH|DW: 743 21|1119 22
+<- XD|TE: 643 15|1043 14
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1876 found on level 5
+ [ CS|FL: 749 24|1127 25
+<- HH|DW: 743 21|1119 22
+<- XD|TE: 643 15|1043 14
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
+
+New max ROI:1887 found on level 5
+ [ XC|FL: 760 25|1127 25
+<- HH|DW: 743 21|1119 22
+<- XD|TE: 643 15|1043 14
+<- FQ|YP: 533 11|755 11
+<- RP|SU: 308 4|440 6
+<- AA|AA: 0 0|0 0
+
