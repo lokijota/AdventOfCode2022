@@ -21,8 +21,9 @@ class Generator:
         self.size = len(sequence)
 
     def next(self):
+        c = self.sequence[self.pointer]
         self.pointer = (self.pointer + 1) % self.size
-        return self.sequence[self.pointer]
+        return c
 
 gas_generator = Generator(lines[0])
 piece_generator = Generator("-+LIo")
@@ -35,11 +36,11 @@ piece_characteristics["L"] = (3, 3, [(0,2), (1,2), (2,0), (2,1), (2,2)])
 piece_characteristics["I"] = (1, 4, [(0,0), (1,0), (2,0), (3,0)])
 piece_characteristics["o"] = (2, 2, [(0,0), (0,1), (1,0), (1,1)])
 
-print(piece_characteristics)
+# print(piece_characteristics)
 
 class Board:
     def __init__(self, gas_generator):
-        self.board = ["1111111"] #represent the bottom -- to make tests simpler? Do I also represent the walls? that's silly, however
+        self.board = [] 
         self.gas_generator = gas_generator
     
     def play_move(self, piece):
@@ -49,19 +50,27 @@ class Board:
             self.board.insert(0, "0000000")
 
         # calculate starting pos of piece
-        piece_row = self.height()
+        piece_row = 0 # self.height()
         piece_col = 2
 
-        moved = True
-        while moved:
+        moved_down = True
+        while moved_down:
             # the following may return the same position as before, if movement wasn't possible
             piece_row, piece_col, moved_side = self.MoveSideways(gas_generator.next(), piece, piece_row, piece_col)
             piece_row, piece_col, moved_down = self.MoveDown(piece, piece_row, piece_col)
 
-            moved = moved_side or moved_down
+        # Now, put the piece in place on the board
 
-        # JOTA: DO SOMETHING -- PUT THE PIECE IN PLACE ON THE BOARD
+        # calculate new piece coordinates
+        where_piece_will_be = [ (c[0] + piece_row, c[1] + piece_col) for c in piece_characteristics[piece][2]]
+        
+        # now put the piece down
+        for c in where_piece_will_be:
+            self.board[c[0]] = self.board[c[0]][:c[1]] + "#" + self.board[c[0]][c[1]+1:]
 
+            # self.board[c[0]][c[1]] = piece
+
+        # remove empty rows from the top -- this can be optimized/avoided... NOTAJOTA
         while self.board[0] == "0000000":
             self.board.pop(0)
 
@@ -78,7 +87,7 @@ class Board:
             return row, col-1, True
 
         else: # right
-            if col + 1 + piece_characteristics[piece][0] > 6:
+            if col + piece_characteristics[piece][0] > 6:
                 return row, col, False
 
             if self.overlap(piece, row, col+1):
@@ -89,17 +98,18 @@ class Board:
     def MoveDown(self, piece, row, col):
 
         # if the piece is already at the bottom, it can't move down
-        if row - piece_characteristics[piece][1] < 0:
+        # remember that row 0 is the topmost one
+        if row + piece_characteristics[piece][1] >= self.height():
             return row, col, False
 
-        if self.overlap(piece, row-1, col):
+        if self.overlap(piece, row+1, col):
             return row, col, False
 
-        return row-1, col, True 
+        return row+1, col, True 
     
     def height(self):
         # this has to be smarter - there may be empty rows at the top after the movement / unless I delete them
-        return len(self.board)-1
+        return len(self.board)
 
     def overlap(self, piece, row, col):
         # check if the piece overlaps with existing pieces on the board
@@ -123,6 +133,9 @@ b = Board(gas_generator)
 
 for i in range(2022):
     b.play_move(piece_generator.next())
-    b.print_board()
+    # b.print_board()
+    # print()
 
 print(b.height())
+
+# part 1 - 3159
