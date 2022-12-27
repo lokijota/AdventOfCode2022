@@ -1,0 +1,64 @@
+C:\PROJECTOS\AdventOfCode2022
+**** Starting Blueprint 1 ****
+++ Fastest 1st geobot - At ticks 32
+++ Fastest 1st geobot - At ticks 31
+New max geodes: 1 at tick 31, q size:20, geodebots:1
+++ Fastest 1st geobot - At ticks 30
+New max geodes: 2 at tick 31, q size:17, geodebots:1
+++ Fastest 1st geobot - At ticks 29
+New max geodes: 3 at tick 31, q size:39, geodebots:1
+++ Fastest 1st geobot - At ticks 28
+New max geodes: 4 at tick 31, q size:30, geodebots:1
+++ Fastest 1st geobot - At ticks 27
+New max geodes: 6 at tick 31, q size:54, geodebots:2
+Elapsed time for blueprint: 1 was 3120.6150779
+Geode max for blueprint: 6
+>>>> Mult total with blueprint 1 completed is 6, checked # states: 238748201, of which #bypassed=415242013
+
+**** Starting Blueprint 2 ****
+++ Fastest 1st geobot - At ticks 21
+New max geodes: 1 at tick 21, q size:12, geodebots:1
+New max geodes: 2 at tick 22, q size:12, geodebots:1
+New max geodes: 3 at tick 23, q size:13, geodebots:1
+New max geodes: 4 at tick 24, q size:13, geodebots:1
+New max geodes: 6 at tick 25, q size:15, geodebots:2
+New max geodes: 8 at tick 26, q size:15, geodebots:2
+New max geodes: 11 at tick 27, q size:17, geodebots:3
+New max geodes: 14 at tick 28, q size:17, geodebots:3
+New max geodes: 18 at tick 29, q size:19, geodebots:4
+New max geodes: 22 at tick 30, q size:19, geodebots:4
+New max geodes: 26 at tick 31, q size:20, geodebots:4
+New max geodes: 28 at tick 31, q size:35, geodebots:5
+++ Fastest 1st geobot - At ticks 20
+New max geodes: 29 at tick 31, q size:37, geodebots:5
+New max geodes: 30 at tick 31, q size:38, geodebots:5
+New max geodes: 32 at tick 31, q size:59, geodebots:6
+New max geodes: 33 at tick 31, q size:61, geodebots:6
+New max geodes: 40 at tick 31, q size:63, geodebots:7
+New max geodes: 44 at tick 31, q size:72, geodebots:8
+Elapsed time for blueprint: 2 was 18523.5550227
+Geode max for blueprint: 44
+>>>> Mult total with blueprint 2 completed is 264, checked # states: 1023085449, of which #bypassed=3303503223
+
+**** Starting Blueprint 3 ****
+++ Fastest 1st geobot - At ticks 30
+New max geodes: 1 at tick 30, q size:19, geodebots:1
+New max geodes: 2 at tick 31, q size:19, geodebots:1
+++ Fastest 1st geobot - At ticks 28
+New max geodes: 3 at tick 30, q size:20, geodebots:1
+New max geodes: 4 at tick 31, q size:20, geodebots:1
+++ Fastest 1st geobot - At ticks 27
+New max geodes: 5 at tick 31, q size:26, geodebots:1
+New max geodes: 6 at tick 31, q size:35, geodebots:2
+New max geodes: 7 at tick 31, q size:47, geodebots:2
+++ Fastest 1st geobot - At ticks 26
+New max geodes: 8 at tick 31, q size:46, geodebots:2
+++ Fastest 1st geobot - At ticks 25
+New max geodes: 10 at tick 31, q size:47, geodebots:2
+New max geodes: 12 at tick 31, q size:62, geodebots:3
+Elapsed time for blueprint: 3 was 16579.20527
+Geode max for blueprint: 12
+>>>> Mult total with blueprint 3 completed is 3168, checked # states: 1074272536, of which #bypassed=2555281302
+Final Multiplication total:  3168
+
+it took about 12-13 hours to calculate.
