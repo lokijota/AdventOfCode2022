@@ -177,7 +177,7 @@ def print_tree_ascending(node):
     text_file.close()
 
 # ler todas as linhas, como de costume
-with open('Challenges\Exc16\input.txt') as f:
+with open('Challenges\Exc16\day16_mg.txt') as f:
     lines = f.read().splitlines()
 
 # extrair a informação relevante com uma regex, e depois fazer as conversões necessárias para o tipo de dados que quero
@@ -244,8 +244,12 @@ def generate_children_v2(tree_node, level=1):
     for combination in combinations:
 
         # prune the tree during the initial levels
-        if level < 3 and (combination[0] in ('FL', 'OL', 'CS', 'UK') or combination[1] in ('FL', 'OL', 'CS', 'UK')):
-            continue
+        # if level < 3 and (combination[0] in ('FL', 'OL', 'CS', 'UK') or combination[1] in ('FL', 'OL', 'CS', 'UK')):
+        #     continue
+
+        # mg:
+        # if level < 2 and (combination[0] in ('XD', 'CD', 'DT', 'TM') or combination[1] in ('XD', 'CD', 'DT', 'TM')):
+        #     continue
 
         # calcular o ROI de cada combinação
         rois_unvisited_valve_e1[tree_node.e1_valve] = [0, 0]
@@ -273,7 +277,7 @@ def generate_children_v2(tree_node, level=1):
             new_node_roi = roi_e1 + roi_e2
             new_node = None
 
-            if ((level == 1 and (new_node_roi > 690)) or level > 1 ): #or \
+            if ((level == 1 and (new_node_roi > 350)) or level > 1 ): #or \
             #     (level == 2 and new_node_roi > 500) or \
             #     (level == 3 and new_node_roi > 1600):
 

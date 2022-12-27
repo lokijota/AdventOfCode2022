@@ -1,0 +1,314 @@
+
+(base) C:\PROJECTOS\AdventOfCode2022>python Challenges\Exc19\code.py
+C:\PROJECTOS\AdventOfCode2022
+**** Starting Blueprint 1 ****
+Elapsed time for blueprint: 1 was 19.992429100000003
+>>>> Quality level with blueprint 1 completed is 0, checked # states: 1065329, of which #bypassed=1510543
+**** Starting Blueprint 2 ****
+++ Fastest 1st geobot - At ticks 21
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', 'OBB', '', '', 'CLB', '', 'OBB', '', 'OBB', '']
+New max geodes: 1 at tick 21, q size:12, geodebots:1
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', 'OBB', '', '', 'CLB', '', 'OBB', '', 'OBB', '', 'GEB', '']
+New max geodes: 2 at tick 22, q size:12, geodebots:1
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', 'OBB', '', '', 'CLB', '', 'OBB', '', 'OBB', '', 'GEB', '', '']
+New max geodes: 3 at tick 23, q size:13, geodebots:1
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', 'OBB', '', '', 'CLB', '', 'OBB', '', 'OBB', '', 'GEB', '', 'OBB', '']
+++ Fastest 1st geobot - At ticks 20
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', 'OBB', '', '', '', 'OBB', 'CLB', '', '']
+New max geodes: 4 at tick 23, q size:18, geodebots:1
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', 'OBB', '', '', '', 'OBB', 'CLB', '', '', 'GEB', 'OBB', '', 'OBB', '']
+New max geodes: 5 at tick 23, q size:34, geodebots:2
+ ... has construction history: ['', '', '', 'ORB', '', 'CLB', '', 'CLB', 'CLB', '', 'CLB', 'CLB', 'OBB', '', 'OBB', 'CLB', 'CLB', 'OBB', '', 'GEB', 'OBB', 'OBB', 'GEB', '']
+Elapsed time for blueprint: 2 was 72.38602649999999
+>>>> Quality level with blueprint 2 completed is 10, checked # states: 5343995, of which #bypassed=9913156
+**** Starting Blueprint 3 ****
+Elapsed time for blueprint: 3 was 114.1490971
+>>>> Quality level with blueprint 3 completed is 10, checked # states: 7964121, of which #bypassed=12848602
+**** Starting Blueprint 4 ****
+++ Fastest 1st geobot - At ticks 24
+ ... has construction history: ['', '', '', 'ORB', '', 'CLB', '', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB']
+Elapsed time for blueprint: 4 was 99.36630949999997
+>>>> Quality level with blueprint 4 completed is 10, checked # states: 6072896, of which #bypassed=11914196
+**** Starting Blueprint 5 ****
+++ Fastest 1st geobot - At ticks 24
+ ... has construction history: ['', '', '', 'ORB', '', 'ORB', '', 'CLB', 'CLB', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'OBB']
+Elapsed time for blueprint: 5 was 44.45319800000004
+>>>> Quality level with blueprint 5 completed is 10, checked # states: 2823706, of which #bypassed=5113918
+**** Starting Blueprint 6 ****
+++ Fastest 1st geobot - At ticks 20
+ ... has construction history: ['', '', 'ORB', '', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB']
+New max geodes: 1 at tick 20, q size:36, geodebots:1
+ ... has construction history: ['', '', 'ORB', '', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'GEB', '']
+New max geodes: 2 at tick 21, q size:39, geodebots:1
+ ... has construction history: ['', '', 'ORB', '', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'GEB', 'OBB', '']
+New max geodes: 3 at tick 22, q size:42, geodebots:1
+ ... has construction history: ['', '', 'ORB', '', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'GEB', 'OBB', 'OBB', '']
+New max geodes: 5 at tick 23, q size:46, geodebots:2
+ ... has construction history: ['', '', 'ORB', '', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'GEB', 'OBB', 'OBB', 'GEB', '']
+Elapsed time for blueprint: 6 was 50.01192209999999
+>>>> Quality level with blueprint 6 completed is 40, checked # states: 4306114, of which #bypassed=6519317
+**** Starting Blueprint 7 ****
+++ Fastest 1st geobot - At ticks 24
+ ... has construction history: ['', '', '', '', 'ORB', '', 'CLB', '', 'CLB', 'CLB', '', 'CLB', 'CLB', '', 'OBB', 'CLB', '', 'OBB', '', 'OBB', 'CLB', 'OBB', '']
+Elapsed time for blueprint: 7 was 7.917762499999981
+>>>> Quality level with blueprint 7 completed is 40, checked # states: 470186, of which #bypassed=583500
+**** Starting Blueprint 8 ****
+++ Fastest 1st geobot - At ticks 23
+ ... has construction history: ['', '', '', 'ORB', '', 'ORB', '', 'CLB', 'CLB', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB']
+New max geodes: 1 at tick 23, q size:37, geodebots:1
+ ... has construction history: ['', '', '', 'ORB', '', 'ORB', '', 'CLB', 'CLB', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'GEB', '']
+++ Fastest 1st geobot - At ticks 22
+ ... has construction history: ['', '', '', 'ORB', '', 'ORB', '', 'CLB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB']
+New max geodes: 2 at tick 23, q size:38, geodebots:1
+ ... has construction history: ['', '', '', 'ORB', '', 'ORB', '', 'CLB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'GEB', 'OBB', '']
+Elapsed time for blueprint: 8 was 53.18508630000002
+>>>> Quality level with blueprint 8 completed is 56, checked # states: 2888967, of which #bypassed=5113918
+**** Starting Blueprint 9 ****
+++ Fastest 1st geobot - At ticks 23
+ ... has construction history: ['', '', '', '', 'CLB', '', '', '', 'CLB', '', '', '', 'OBB', '', 'CLB', '', 'OBB', '', '', 'OBB', '', '']
+New max geodes: 1 at tick 23, q size:15, geodebots:1
+ ... has construction history: ['', '', '', '', 'CLB', '', '', '', 'CLB', '', '', '', 'OBB', '', 'CLB', '', 'OBB', '', '', 'OBB', '', '', 'GEB', '']
+Elapsed time for blueprint: 9 was 13.559332999999981
+>>>> Quality level with blueprint 9 completed is 65, checked # states: 649620, of which #bypassed=1118246
+**** Starting Blueprint 10 ****
+Elapsed time for blueprint: 10 was 6.996120200000007
+>>>> Quality level with blueprint 10 completed is 65, checked # states: 427218, of which #bypassed=582643
+**** Starting Blueprint 11 ****
+++ Fastest 1st geobot - At ticks 22
+ ... has construction history: ['', '', 'ORB', '', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'OBB']
+New max geodes: 1 at tick 22, q size:40, geodebots:1
+ ... has construction history: ['', '', 'ORB', '', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'OBB', 'GEB', '']
+New max geodes: 2 at tick 23, q size:43, geodebots:1
+ ... has construction history: ['', '', 'ORB', '', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'OBB', 'GEB', 'OBB', '']
+Elapsed time for blueprint: 11 was 94.41995859999997
+>>>> Quality level with blueprint 11 completed is 87, checked # states: 4555972, of which #bypassed=9163096
+**** Starting Blueprint 12 ****
+++ Fastest 1st geobot - At ticks 24
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', '', 'ORB', '', 'CLB', '', 'OBB', '', 'CLB', 'CLB', '', 'OBB', '']
+++ Fastest 1st geobot - At ticks 23
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', '', 'ORB', '', 'CLB', '', 'OBB', '', '', 'OBB', 'CLB', '']
+New max geodes: 1 at tick 23, q size:20, geodebots:1
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', '', 'ORB', '', 'CLB', '', 'OBB', '', '', 'OBB', 'CLB', '', 'GEB', '']
+++ Fastest 1st geobot - At ticks 22
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'ORB', '', 'CLB', '', '', 'OBB', 'CLB', 'CLB', '', '', 'OBB', '']
+New max geodes: 2 at tick 23, q size:21, geodebots:1
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'ORB', '', 'CLB', '', '', 'OBB', 'CLB', 'CLB', '', '', 'OBB', '', 'GEB', 'CLB', '']
+++ Fastest 1st geobot - At ticks 21
+ ... has construction history: ['', '', '', 'ORB', '', 'CLB', '', 'CLB', 'CLB', '', 'CLB', 'CLB', '', 'OBB', '', 'CLB', 'CLB', '', 'OBB', '']
+New max geodes: 3 at tick 23, q size:28, geodebots:1
+ ... has construction history: ['', '', '', 'ORB', '', 'CLB', '', 'CLB', 'CLB', '', 'CLB', 'CLB', '', 'OBB', '', 'CLB', 'CLB', '', 'OBB', '', 'GEB', '', 'OBB', '']
+Elapsed time for blueprint: 12 was 142.3240611
+>>>> Quality level with blueprint 12 completed is 123, checked # states: 9873834, of which #bypassed=15288552
+**** Starting Blueprint 13 ****
+++ Fastest 1st geobot - At ticks 22
+ ... has construction history: ['', '', '', 'ORB', '', 'ORB', '', 'CLB', 'CLB', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB']
+New max geodes: 1 at tick 22, q size:35, geodebots:1
+ ... has construction history: ['', '', '', 'ORB', '', 'ORB', '', 'CLB', 'CLB', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'GEB', '']
+New max geodes: 2 at tick 23, q size:38, geodebots:1
+ ... has construction history: ['', '', '', 'ORB', '', 'ORB', '', 'CLB', 'CLB', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'GEB', 'OBB', '']
+++ Fastest 1st geobot - At ticks 21
+ ... has construction history: ['', '', '', 'ORB', '', 'ORB', '', 'CLB', 'CLB', '', 'CLB', 'CLB', 'CLB', 'ORB', 'OBB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB']
+New max geodes: 3 at tick 23, q size:35, geodebots:1
+ ... has construction history: ['', '', '', 'ORB', '', 'ORB', '', 'CLB', 'CLB', '', 'CLB', 'CLB', 'CLB', 'ORB', 'OBB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'GEB', 'OBB', 'CLB', '']
+Elapsed time for blueprint: 13 was 57.253254800000036
+>>>> Quality level with blueprint 13 completed is 162, checked # states: 4317184, of which #bypassed=6353040
+**** Starting Blueprint 14 ****
+++ Fastest 1st geobot - At ticks 20
+ ... has construction history: ['', '', '', 'ORB', '', 'ORB', '', 'CLB', 'CLB', 'ORB', 'ORB', 'CLB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB']
+New max geodes: 1 at tick 20, q size:31, geodebots:1
+ ... has construction history: ['', '', '', 'ORB', '', 'ORB', '', 'CLB', 'CLB', 'ORB', 'ORB', 'CLB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'GEB', '']
+New max geodes: 2 at tick 21, q size:34, geodebots:1
+ ... has construction history: ['', '', '', 'ORB', '', 'ORB', '', 'CLB', 'CLB', 'ORB', 'ORB', 'CLB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'GEB', 'OBB', '']
+New max geodes: 3 at tick 22, q size:37, geodebots:1
+ ... has construction history: ['', '', '', 'ORB', '', 'ORB', '', 'CLB', 'CLB', 'ORB', 'ORB', 'CLB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'GEB', 'OBB', 'OBB', '']
+New max geodes: 5 at tick 23, q size:41, geodebots:2
+ ... has construction history: ['', '', '', 'ORB', '', 'ORB', '', 'CLB', 'CLB', 'ORB', 'ORB', 'CLB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'GEB', 'OBB', 'OBB', 'GEB', '']
+New max geodes: 6 at tick 23, q size:38, geodebots:2
+ ... has construction history: ['', '', '', 'ORB', '', 'ORB', '', 'CLB', 'CLB', '', 'CLB', 'CLB', 'CLB', 'OBB', 'ORB', 'OBB', 'CLB', 'OBB', 'CLB', 'GEB', 'OBB', 'GEB', 'OBB', '']
+New max geodes: 7 at tick 23, q size:43, geodebots:3
+ ... has construction history: ['', '', '', 'ORB', '', 'ORB', '', 'CLB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'OBB', 'OBB', 'GEB', 'OBB', 'GEB', 'GEB', '']
+Elapsed time for blueprint: 14 was 120.24971310000001
+>>>> Quality level with blueprint 14 completed is 260, checked # states: 6468666, of which #bypassed=12818276
+**** Starting Blueprint 15 ****
+++ Fastest 1st geobot - At ticks 23
+ ... has construction history: ['', '', '', '', 'CLB', '', '', '', 'CLB', '', '', '', 'OBB', '', 'CLB', '', '', 'OBB', '', '', 'OBB', '']
+New max geodes: 1 at tick 23, q size:16, geodebots:1
+ ... has construction history: ['', '', '', '', 'CLB', '', '', '', 'CLB', '', '', '', 'OBB', '', 'CLB', '', '', 'OBB', '', '', 'OBB', '', 'GEB', '']
+Elapsed time for blueprint: 15 was 7.395563299999935
+>>>> Quality level with blueprint 15 completed is 275, checked # states: 419154, of which #bypassed=638588
+**** Starting Blueprint 16 ****
+++ Fastest 1st geobot - At ticks 20
+ ... has construction history: ['', '', '', '', 'CLB', '', '', '', 'CLB', '', '', '', 'OBB', '', '', '', 'OBB', '', '']
+New max geodes: 1 at tick 20, q size:11, geodebots:1
+ ... has construction history: ['', '', '', '', 'CLB', '', '', '', 'CLB', '', '', '', 'OBB', '', '', '', 'OBB', '', '', 'GEB', '']
+New max geodes: 2 at tick 21, q size:11, geodebots:1
+ ... has construction history: ['', '', '', '', 'CLB', '', '', '', 'CLB', '', '', '', 'OBB', '', '', '', 'OBB', '', '', 'GEB', '', '']
+New max geodes: 3 at tick 22, q size:11, geodebots:1
+ ... has construction history: ['', '', '', '', 'CLB', '', '', '', 'CLB', '', '', '', 'OBB', '', '', '', 'OBB', '', '', 'GEB', '', '', '']
+New max geodes: 5 at tick 23, q size:12, geodebots:2
+ ... has construction history: ['', '', '', '', 'CLB', '', '', '', 'CLB', '', '', '', 'OBB', '', '', '', 'OBB', '', '', 'GEB', '', '', 'GEB', '']
+++ Fastest 1st geobot - At ticks 19
+ ... has construction history: ['', '', '', '', 'CLB', '', '', '', 'ORB', '', '', 'OBB', '', 'CLB', '', 'OBB', '', 'OBB']
+New max geodes: 6 at tick 22, q size:18, geodebots:2
+ ... has construction history: ['', '', '', '', 'CLB', '', '', '', 'ORB', '', '', 'OBB', '', 'CLB', '', 'OBB', '', 'OBB', 'GEB', '', 'GEB', '', '']
+New max geodes: 8 at tick 23, q size:21, geodebots:2
+ ... has construction history: ['', '', '', '', 'CLB', '', '', '', 'ORB', '', '', 'OBB', '', 'CLB', '', 'OBB', '', 'OBB', 'GEB', '', 'GEB', '', 'OBB', '']
+++ Fastest 1st geobot - At ticks 18
+ ... has construction history: ['', '', '', '', 'CLB', '', '', '', '', '', 'OBB', '', 'ORB', '', '', 'OBB', '']
+New max geodes: 9 at tick 23, q size:26, geodebots:3
+ ... has construction history: ['', '', '', '', 'ORB', '', '', 'CLB', '', 'CLB', '', '', 'OBB', '', 'OBB', 'ORB', '', 'OBB', 'GEB', 'OBB', 'GEB', 'CLB', 'GEB', '']
+Elapsed time for blueprint: 16 was 6.997664200000031
+>>>> Quality level with blueprint 16 completed is 419, checked # states: 361278, of which #bypassed=835001
+**** Starting Blueprint 17 ****
+Elapsed time for blueprint: 17 was 12.909368200000017
+>>>> Quality level with blueprint 17 completed is 419, checked # states: 844149, of which #bypassed=1441273
+**** Starting Blueprint 18 ****
+++ Fastest 1st geobot - At ticks 24
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', '', 'OBB', '', '', 'CLB', '', '', 'OBB', '', '', 'OBB', '']
+++ Fastest 1st geobot - At ticks 23
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', '', 'OBB', '', '', '', '', 'OBB', 'CLB', '', '', '']
+New max geodes: 1 at tick 23, q size:13, geodebots:1
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', '', 'OBB', '', '', '', '', 'OBB', 'CLB', '', '', '', 'GEB', '']
+Elapsed time for blueprint: 18 was 7.456276199999934
+>>>> Quality level with blueprint 18 completed is 437, checked # states: 477655, of which #bypassed=662075
+**** Starting Blueprint 19 ****
+Elapsed time for blueprint: 19 was 10.84988599999997
+>>>> Quality level with blueprint 19 completed is 437, checked # states: 633469, of which #bypassed=928681
+**** Starting Blueprint 20 ****
+Elapsed time for blueprint: 20 was 15.027982000000065
+>>>> Quality level with blueprint 20 completed is 437, checked # states: 989323, of which #bypassed=1533111
+**** Starting Blueprint 21 ****
+Elapsed time for blueprint: 21 was 59.69429859999991
+>>>> Quality level with blueprint 21 completed is 437, checked # states: 3497352, of which #bypassed=6877741
+**** Starting Blueprint 22 ****
+++ Fastest 1st geobot - At ticks 24
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', '', 'OBB', '', '']
+++ Fastest 1st geobot - At ticks 23
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', 'CLB', '', '', 'CLB', '', '']
+New max geodes: 1 at tick 23, q size:10, geodebots:1
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', 'CLB', '', '', 'CLB', '', '', 'GEB', '']
+++ Fastest 1st geobot - At ticks 22
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', 'CLB', '', '', '', '']
+New max geodes: 2 at tick 23, q size:12, geodebots:1
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', 'CLB', '', '', '', '', 'GEB', 'CLB', '']
+++ Fastest 1st geobot - At ticks 21
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', '', 'OBB', '', '']
+New max geodes: 3 at tick 23, q size:11, geodebots:1
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', '', 'OBB', '', '', 'GEB', '', '', '']
+++ Fastest 1st geobot - At ticks 20
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', 'CLB', '', '', 'CLB', '', '']
+New max geodes: 4 at tick 23, q size:10, geodebots:1
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', 'CLB', '', '', 'CLB', '', '', 'GEB', '', '', 'CLB', '']
+++ Fastest 1st geobot - At ticks 19
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', 'CLB', '', '', '', '']
+New max geodes: 5 at tick 23, q size:12, geodebots:1
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', 'CLB', '', '', '', '', 'GEB', 'CLB', '', '', 'CLB', '']
+++ Fastest 1st geobot - At ticks 18
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', '', 'OBB', '', '']
+New max geodes: 7 at tick 22, q size:12, geodebots:2
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', '', 'OBB', '', '', 'GEB', '', '', 'GEB', '', '']
+New max geodes: 9 at tick 23, q size:12, geodebots:2
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', '', 'OBB', '', '', 'GEB', '', '', 'GEB', '', '', '']
+Elapsed time for blueprint: 22 was 6.485408900000039
+>>>> Quality level with blueprint 22 completed is 635, checked # states: 338601, of which #bypassed=637127
+**** Starting Blueprint 23 ****
+++ Fastest 1st geobot - At ticks 21
+ ... has construction history: ['', '', 'ORB', '', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB']
+New max geodes: 1 at tick 21, q size:38, geodebots:1
+ ... has construction history: ['', '', 'ORB', '', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'GEB', '']
+New max geodes: 2 at tick 22, q size:41, geodebots:1
+ ... has construction history: ['', '', 'ORB', '', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'GEB', 'OBB', '']
+New max geodes: 4 at tick 23, q size:45, geodebots:2
+ ... has construction history: ['', '', 'ORB', '', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'GEB', 'OBB', 'GEB', '']
+Elapsed time for blueprint: 23 was 79.72279389999994
+>>>> Quality level with blueprint 23 completed is 727, checked # states: 6322290, of which #bypassed=8684288
+**** Starting Blueprint 24 ****
+++ Fastest 1st geobot - At ticks 21
+ ... has construction history: ['', '', '', '', 'CLB', '', '', '', 'CLB', '', '', '', 'OBB', '', '', '', 'OBB', '', '', '']
+New max geodes: 1 at tick 21, q size:14, geodebots:1
+ ... has construction history: ['', '', '', '', 'CLB', '', '', '', 'CLB', '', '', '', 'OBB', '', '', '', 'OBB', '', '', '', 'GEB', '']
+New max geodes: 2 at tick 22, q size:14, geodebots:1
+ ... has construction history: ['', '', '', '', 'CLB', '', '', '', 'CLB', '', '', '', 'OBB', '', '', '', 'OBB', '', '', '', 'GEB', '', '']
+New max geodes: 3 at tick 23, q size:17, geodebots:1
+ ... has construction history: ['', '', '', '', 'CLB', '', '', '', 'CLB', '', '', '', 'OBB', '', '', '', 'OBB', '', '', '', 'GEB', '', 'OBB', '']
+++ Fastest 1st geobot - At ticks 20
+ ... has construction history: ['', '', '', '', 'CLB', '', '', '', 'ORB', '', '', 'OBB', '', 'CLB', '', 'OBB', '', 'OBB', '']
+New max geodes: 5 at tick 23, q size:23, geodebots:2
+ ... has construction history: ['', '', '', '', 'CLB', '', '', '', 'ORB', '', '', 'OBB', '', 'CLB', '', 'OBB', '', 'OBB', '', 'GEB', 'OBB', '', 'GEB', '']
+Elapsed time for blueprint: 24 was 8.174584000000095
+>>>> Quality level with blueprint 24 completed is 847, checked # states: 505760, of which #bypassed=900969
+**** Starting Blueprint 25 ****
+++ Fastest 1st geobot - At ticks 24
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', '', 'OBB', '', '']
+++ Fastest 1st geobot - At ticks 23
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', 'CLB', '', '', 'CLB', '', '']
+New max geodes: 1 at tick 23, q size:10, geodebots:1
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', 'CLB', '', '', 'CLB', '', '', 'GEB', '']
+++ Fastest 1st geobot - At ticks 21
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', '', 'OBB', '', '']
+New max geodes: 2 at tick 22, q size:11, geodebots:1
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', '', 'OBB', '', '', 'GEB', '', '']
+New max geodes: 3 at tick 23, q size:12, geodebots:1
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', '', 'OBB', '', '', 'GEB', '', 'CLB', '']
+++ Fastest 1st geobot - At ticks 20
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', 'CLB', '', '', 'CLB', '', '']
+New max geodes: 4 at tick 23, q size:10, geodebots:1
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', 'CLB', '', '', 'CLB', '', '', 'GEB', '', 'CLB', '', '']
+++ Fastest 1st geobot - At ticks 18
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', '', 'OBB', '', '']
+New max geodes: 6 at tick 22, q size:12, geodebots:2
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', '', 'OBB', '', '', 'GEB', '', 'CLB', '', 'GEB', '']
+New max geodes: 8 at tick 23, q size:12, geodebots:2
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', '', 'OBB', '', '', '', 'OBB', '', '', 'GEB', '', 'CLB', '', 'GEB', '', '']
+Elapsed time for blueprint: 25 was 3.8133241000000453
+>>>> Quality level with blueprint 25 completed is 1047, checked # states: 208284, of which #bypassed=281290
+**** Starting Blueprint 26 ****
+++ Fastest 1st geobot - At ticks 22
+ ... has construction history: ['', '', '', 'ORB', '', 'ORB', '', 'CLB', 'CLB', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB']
+New max geodes: 1 at tick 22, q size:35, geodebots:1
+ ... has construction history: ['', '', '', 'ORB', '', 'ORB', '', 'CLB', 'CLB', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'GEB', '']
+New max geodes: 2 at tick 23, q size:38, geodebots:1
+ ... has construction history: ['', '', '', 'ORB', '', 'ORB', '', 'CLB', 'CLB', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'GEB', 'OBB', '']
+Elapsed time for blueprint: 26 was 73.24250540000003
+>>>> Quality level with blueprint 26 completed is 1099, checked # states: 3869441, of which #bypassed=7513843
+**** Starting Blueprint 27 ****
+++ Fastest 1st geobot - At ticks 22
+ ... has construction history: ['', '', 'ORB', '', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'OBB']
+New max geodes: 1 at tick 22, q size:41, geodebots:1
+ ... has construction history: ['', '', 'ORB', '', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'OBB', 'GEB', '']
+New max geodes: 2 at tick 23, q size:44, geodebots:1
+ ... has construction history: ['', '', 'ORB', '', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'OBB', 'GEB', 'OBB', '']
+Elapsed time for blueprint: 27 was 44.11571019999997
+>>>> Quality level with blueprint 27 completed is 1153, checked # states: 2304397, of which #bypassed=3360294
+**** Starting Blueprint 28 ****
+++ Fastest 1st geobot - At ticks 24
+ ... has construction history: ['', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', '', 'CLB', '', 'OBB', '', '', 'OBB', '', 'ORB', '', 'OBB', '']
+++ Fastest 1st geobot - At ticks 23
+ ... has construction history: ['', '', '', 'ORB', '', 'CLB', '', 'CLB', 'CLB', '', 'CLB', 'CLB', '', 'OBB', 'CLB', 'CLB', 'OBB', '', 'OBB', 'CLB', 'CLB', '']
+New max geodes: 1 at tick 23, q size:30, geodebots:1
+ ... has construction history: ['', '', '', 'ORB', '', 'CLB', '', 'CLB', 'CLB', '', 'CLB', 'CLB', '', 'OBB', 'CLB', 'CLB', 'OBB', '', 'OBB', 'CLB', 'CLB', '', 'GEB', '']
+Elapsed time for blueprint: 28 was 148.31533590000004
+>>>> Quality level with blueprint 28 completed is 1181, checked # states: 8310123, of which #bypassed=14997371
+**** Starting Blueprint 29 ****
+++ Fastest 1st geobot - At ticks 23
+ ... has construction history: ['', '', 'ORB', '', 'CLB', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'OBB', 'CLB', 'OBB']
+New max geodes: 1 at tick 23, q size:43, geodebots:1
+ ... has construction history: ['', '', 'ORB', '', 'CLB', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'CLB', 'CLB', 'OBB', 'OBB', 'CLB', 'OBB', 'GEB', '']
+Elapsed time for blueprint: 29 was 106.00081490000002
+>>>> Quality level with blueprint 29 completed is 1210, checked # states: 6016536, of which #bypassed=10835386
+**** Starting Blueprint 30 ****
+++ Fastest 1st geobot - At ticks 19
+ ... has construction history: ['', '', 'ORB', '', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'OBB', 'CLB', 'OBB']
+New max geodes: 1 at tick 19, q size:35, geodebots:1
+ ... has construction history: ['', '', 'ORB', '', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'OBB', 'CLB', 'OBB', 'GEB', '']
+New max geodes: 2 at tick 20, q size:38, geodebots:1
+ ... has construction history: ['', '', 'ORB', '', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'OBB', 'CLB', 'OBB', 'GEB', 'OBB', '']
+New max geodes: 4 at tick 21, q size:42, geodebots:2
+ ... has construction history: ['', '', 'ORB', '', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'OBB', 'CLB', 'OBB', 'GEB', 'OBB', 'GEB', '']
+New max geodes: 6 at tick 22, q size:45, geodebots:2
+ ... has construction history: ['', '', 'ORB', '', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'OBB', 'CLB', 'OBB', 'GEB', 'OBB', 'GEB', 'OBB', '']
+New max geodes: 9 at tick 23, q size:49, geodebots:3
+ ... has construction history: ['', '', 'ORB', '', 'ORB', 'ORB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'CLB', 'OBB', 'CLB', 'OBB', 'OBB', 'CLB', 'OBB', 'GEB', 'OBB', 'GEB', 'OBB', 'GEB', '']
+Elapsed time for blueprint: 30 was 384.0203401000001
+>>>> Quality level with blueprint 30 completed is 1480, checked # states: 7110396, of which #bypassed=18179152
+Final quality level:  1480
