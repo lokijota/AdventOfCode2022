@@ -112,6 +112,7 @@ def print_result(previous_nodes, shortest_path, start_node, target_node):
     
     print("We found the following best path with a value of {}.".format(shortest_path[target_node]))
     print(" -> ".join(reversed(path)))
+    print("#step = ", len(path)-1)
 
 ####################### fim da implementação de grafo
 
@@ -119,7 +120,7 @@ def print_result(previous_nodes, shortest_path, start_node, target_node):
 height = len(lines)-2
 width = len(lines[0])-2
 start_pos = (-1, 0)
-end_pos = (width, height)
+end_pos = (height, width-1)
 
 # extract the blizzard positions, and make them 0-based
 blizzards_at_start = [(row-1,col-1, the_char) for row, line in enumerate(lines) for col, the_char in enumerate(line) if the_char in ['<', '>', '^', 'v']]
@@ -137,6 +138,31 @@ def free_positions_at_minute(start_blizzards, minute, width, height):
     blizzard_coords = list(map(lambda x: (x[0], x[1]), blizzards)) # isolating this as it makes for a much faster list compreenhension execution time
     return [(row, col) for row in range(height) for col in range(width) if (row, col) not in blizzard_coords]
 
+possible_relative_moves = [(-1,0), (1,0), (0,0), (0,-1), (0,1)] # staying in place is also an option
+
+def get_possible_moves(start_blizzards, t0, width, height, previous_connections = []):
+    connections = []
+
+    t0_free_positions = free_positions_at_minute(start_blizzards, t0, width, height)
+
+    possible_moves_from_t0 = []
+    for t0_free_position in t0_free_positions:
+        possible_moves_from_t0 += [ (t0_free_position[0], t0_free_position[1], t0_free_position[0] + prm[0], t0_free_position[1] + prm[1]) for prm in possible_relative_moves if (t0_free_position[0] + prm[0] < height) and (t0_free_position[0] + prm[0] >= 0) and (t0_free_position[1] + prm[1] < height) and (t0_free_position[1] + prm[1] >= 0) ]
+
+    # optimization -- filter out all the positions that are at a manhattan distance > t from the starting position
+    # (or >=, I'm not sure yet). Or another alternative is to filter based on a list of coordinates that are  in prev
+    # connections. for example, on the very first step you can only move from -1,0 to 0,0, so t0_free_positions can be 
+    # filtered based on that fact.
+
+    t1_free_positions = free_positions_at_minute(start_blizzards, t0+1, width, height)
+
+    # agora quero ver a intersecção entre o possible_moves_from_t0 e t1_free_positions, olhando para a posição final de possible moves from t0
+    connections = [pmt0 for pmt0  in possible_moves_from_t0 if (pmt0[2], pmt0[3]) in t1_free_positions]
+
+    return connections
+
+
+
 def print_map(blizzards, width, height):
     map = np.full((width,height), ".")
 
@@ -151,5 +177,52 @@ def print_map(blizzards, width, height):
                 print(col, end='')
         print()
 
-print_map(blizzards_at_start, width, height)
-print(free_positions_at_minute(blizzards_at_start, 1, width, height))
+# print_map(blizzards_at_start, width, height)
+# print(free_positions_at_minute(blizzards_at_start, 1, width, height))
+
+t = 0
+moves = get_possible_moves(blizzards_at_start, 0, width, height)
+
+# create the node
+init_graph = {}
+init_graph["start_node"] = {}
+init_graph["start_node"]["t0_0_0"] = 1 # this doesn't work in the puzzle input, as the position is not free at t=0
+init_graph["end_node"] = {}
+
+for move in moves:
+    origin_node = "t" + str(t) + "_" + str(move[0]) + "_" + str(move[1])
+    target_node = "t" + str(t+1) + "_" + str(move[2]) + "_" + str(move[3])
+
+    # node names can be repeated due to different ways to get to them (if I'm not mistaken)
+    if origin_node not in init_graph:
+        init_graph[origin_node] = {}
+    if target_node not in init_graph:
+        init_graph[target_node] = {}
+    init_graph[origin_node][target_node] = 1
+
+    # add a connection to the end node if it's there
+    if move[2] == end_pos[0]-1 and move[3] == end_pos[1]:
+        init_graph[target_node]["end_node"] = 1
+
+graph = Graph(list(init_graph.keys()), init_graph)
+
+previous_nodes, shortest_path = dijkstra_algorithm(graph=graph, start_node="start_node")
+
+print_result(previous_nodes, shortest_path, "start_node", "end_node")
+
+"""
+now, do this:
+
+- calculate two lists of free positions, one for t=0 and one for t=1
+- make something that returns edges beween the two -- what's connected to what~
+- this has to be tripples (row, col, time)
+
+- generate a graph with all the free positions as nodes for t=0, in each node put the 
+- add to the graph all the free positions for t=1, up to t=30
+- add the start node and the end node and the corresponding edges
+
+- run dijkstra's algorithm on the graph
+- print the result in terms of number of steps
+
+
+"""
