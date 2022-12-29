@@ -15,15 +15,8 @@ print(os.path.abspath("."))
 from telegram import *
 
 # ler todas as linhas, como de costume
-with open('Challenges\Exc23\input_debug.txt') as f:
+with open('Challenges\Exc23\input.txt') as f:
     lines = f.read().splitlines()
-
-# map_rows = []
-# for line in lines:
-#     if len(line) > 0:
-#         map_rows += [line]
-#     else:
-#         break   
 
 elve_locations = []
 
@@ -34,26 +27,37 @@ for row, line in enumerate(lines):
 
 print("Found # elves: ", len(elve_locations))
 
+def print_map(elve_locations):
+    # map = np.arange(132).reshape(12,11)
+    map = np.full((12,11), ".")
+    print(map.shape)
+
+    for elf in elve_locations:
+        map[elf[0]+2, elf[1]+2] = '#'
+
+    for row in map:
+        for col in row:
+            if col == '#':
+                print(colored(col, 'red'), end='')
+            else:
+                print(col, end='')
+        print()
+
 # method 4 - hybrid from https://www.geeksforgeeks.org/python-intersection-two-lists/
 def intersection(lst1, lst2):
     temp = set(lst2)
     lst3 = [value for value in lst1 if value in temp]
     return lst3
  
-# # Driver Code
-# lst1 = [9, 9, 74, 21, 45, 11, 63]
-# lst2 = [4, 9, 1, 17, 11, 26, 28, 28, 26, 66, 91]
-# print(intersection(lst1, lst2))
-
+# statis definitions helpful to compute coordinates
 full_perimeter = [(-1,-1), (-1,0), (-1,1), (0,-1), (0,1), (1,-1), (1,0), (1,1)]
-
 northwards = [(-1,-1), (-1,0), (-1,1)] # the middle one is the always the direction of movement, if the path is selected
 southwards = [(1,-1),  (1,0),  (1,1)]
 eastwards =  [(-1,1),  (0,1),  (1,1)]
 westwards =  [(-1,-1), (0,-1), (1,-1)]
 
 directions = deque()
-directions += [northwards, southwards, eastwards, westwards]
+directions += [northwards, southwards, westwards, eastwards]
 
 for round in range(1000):
 
@@ -63,9 +67,9 @@ for round in range(1000):
 
     for elf in elve_locations:
         elf_neighbours = [ (elf[0] + p[0], elf[1] + p[1]) for p in full_perimeter]
-        if len(intersection(elf_neighbours, elve_locations)) == 0:
+        if len(intersection(elf_neighbours, elve_locations)) == 0: # feels lonely so it doesn't move
             static_elves.add(elf)
-            continue # next elf
+            continue 
 
         moved = False
         for direction in directions:
@@ -73,7 +77,7 @@ for round in range(1000):
             if len(intersection(neighbours, elve_locations)) > 0:
                 continue
 
-            # else propose a move -- (curentpos, newpos) tuple 
+            # else propose a move -- (curentpos, newpos) tuple - direction[1] always has the direction of movement
             proposed_move = (elf[0], elf[1], elf[0] + direction[1][0], elf[1] + direction[1][1])
             proposed_moves += [proposed_move]
             moved = True
@@ -89,32 +93,26 @@ for round in range(1000):
     # second half
     candidate_moving_elves = []
 
-    # (3,2) está nas duas! como é possível??
     for proposed_move in proposed_moves:
-        matches = [pm for pm in proposed_moves if pm[2] == proposed_move[2] and pm[3] == proposed_move[3]]
+        matches = [pm for pm in proposed_moves if (pm[2] == proposed_move[2]) and (pm[3] == proposed_move[3])]
         if len(matches) > 1:
-            # print("  more than one elves want to move to the same position, none will move", matches)
-            static_elves.add((proposed_move[0], proposed_move[1]))
-        elif (proposed_move[2], proposed_move[3]) in static_elves:
             static_elves.add((proposed_move[0], proposed_move[1]))
         else:
-            # print("  found elf to move")
-            candidate_moving_elves += [proposed_move]
+            candidate_moving_elves += [(proposed_move[2], proposed_move[3])]
 
-    moving_elves = []
-    for candidate_moving_elf in candidate_moving_elves:
-        if (candidate_moving_elf[2], candidate_moving_elf[3]) in static_elves:
-            static_elves.add((candidate_moving_elf[0], candidate_moving_elf[1]))
-        else:
-            moving_elves += [(candidate_moving_elf[2], candidate_moving_elf[3])]
+    moving_elves = candidate_moving_elves
 
     print("Round:", round, ", Moving elves: ", len(moving_elves), ", Static elves: ", len(static_elves), ", total=", len(moving_elves) + len(static_elves))
 
     if len(moving_elves) == 0:
-        print("Round=", round)
+        print("Round=", round+1)
         break
     # update all the positions now
     elve_locations = moving_elves + list(static_elves)
+
+    # print_map(elve_locations)
+
+
 
 # Calculate totals
 min_row = 10000
@@ -132,12 +130,12 @@ for elf in elve_locations:
     if elf[1] > max_col:
         max_col = elf[1]
 
-print("width: ", max_col - min_col + 1, ", height: ", max_row - min_row + 1)
+# print("Row range: ", min_row, max_row, ", Col range: ", min_col, max_col)
+
+# print("width: ", max_col - min_col + 1, ", height: ", max_row - min_row + 1)
 squares = (max_col - min_col + 1) * (max_row - min_row + 1)
-print("Area: ", squares)
+# print("Area: ", squares)
 print("Score total: ", squares - len(elve_locations))
 
-# 4333 is too high
-# 4249 OK / no entanto não funciona para o debug dataset, falta uma coluna!
-
-# part 2 - 1027 and 1026 too high
+# 4249 
+# part 2 - 980
