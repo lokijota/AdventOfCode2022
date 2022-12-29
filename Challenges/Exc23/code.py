@@ -15,7 +15,7 @@ print(os.path.abspath("."))
 from telegram import *
 
 # ler todas as linhas, como de costume
-with open('Challenges\Exc23\input.txt') as f:
+with open('Challenges\Exc23\input_debug.txt') as f:
     lines = f.read().splitlines()
 
 # map_rows = []
@@ -47,34 +47,34 @@ def intersection(lst1, lst2):
 
 full_perimeter = [(-1,-1), (-1,0), (-1,1), (0,-1), (0,1), (1,-1), (1,0), (1,1)]
 
-northwards = [(-1,-1), (-1,0), (-1,1),  (-1,0)] # last is always the direction of movement / same as the middle one but meh
-southwards = [(1,-1),  (1,0),  (1,1),   (1,0)]
-eastwards =  [(-1,1),  (0,1),  (1,1),   (0,1)]
-westwards =  [(-1,-1), (0,-1), (1,-1),  (0,-1)]
+northwards = [(-1,-1), (-1,0), (-1,1)] # the middle one is the always the direction of movement, if the path is selected
+southwards = [(1,-1),  (1,0),  (1,1)]
+eastwards =  [(-1,1),  (0,1),  (1,1)]
+westwards =  [(-1,-1), (0,-1), (1,-1)]
 
 directions = deque()
 directions += [northwards, southwards, eastwards, westwards]
 
-for round in range(10):
+for round in range(1000):
 
     # first half
     proposed_moves = deque()
     static_elves = set()
 
     for elf in elve_locations:
-        elf_neighbours = [ (elf[0] + p[0], elf[1] + + p[1]) for p in full_perimeter]
+        elf_neighbours = [ (elf[0] + p[0], elf[1] + p[1]) for p in full_perimeter]
         if len(intersection(elf_neighbours, elve_locations)) == 0:
             static_elves.add(elf)
             continue # next elf
 
         moved = False
         for direction in directions:
-            neighbours = [ (elf[0] + p[0], elf[1] + p[1]) for p in direction[:3]]
+            neighbours = [ (elf[0] + p[0], elf[1] + p[1]) for p in direction]
             if len(intersection(neighbours, elve_locations)) > 0:
                 continue
 
             # else propose a move -- (curentpos, newpos) tuple 
-            proposed_move = (elf[0], elf[1], elf[0] + direction[3][0], elf[1] + direction[3][1])
+            proposed_move = (elf[0], elf[1], elf[0] + direction[1][0], elf[1] + direction[1][1])
             proposed_moves += [proposed_move]
             moved = True
             break
@@ -108,8 +108,11 @@ for round in range(10):
         else:
             moving_elves += [(candidate_moving_elf[2], candidate_moving_elf[3])]
 
-    print("Moving elves: ", len(moving_elves), ", Static elves: ", len(static_elves), ", total=", len(moving_elves) + len(static_elves))
+    print("Round:", round, ", Moving elves: ", len(moving_elves), ", Static elves: ", len(static_elves), ", total=", len(moving_elves) + len(static_elves))
 
+    if len(moving_elves) == 0:
+        print("Round=", round)
+        break
     # update all the positions now
     elve_locations = moving_elves + list(static_elves)
 
@@ -136,3 +139,5 @@ print("Score total: ", squares - len(elve_locations))
 
 # 4333 is too high
 # 4249 OK / no entanto não funciona para o debug dataset, falta uma coluna!
+
+# part 2 - 1027 and 1026 too high
