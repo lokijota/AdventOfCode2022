@@ -223,7 +223,7 @@ init_graph["start_node"] = {}
 init_graph["end_node"] = {}
 
 start_node_connected = False
-for t in range(600):
+for t in range(380):
     start = timer()
     moves = get_possible_moves(blizzards_at_start, t, width, height)
 
